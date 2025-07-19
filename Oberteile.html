@@ -4,7 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oberteile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- ✅ Lightbox2 CSS + JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
   <style>
     body {
       background-color: black;
@@ -59,6 +63,7 @@
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(255,255,255,0.3);
+      cursor: pointer;
     }
 
     .artikel-links {
@@ -80,11 +85,9 @@
       .artikel .artikel-titel span {
         font-size: 16px;
       }
-
       .artikel .artikel-titel .artikel-nummer {
         font-size: 18px;
       }
-
       .artikel-links a {
         font-size: 14px;
       }
@@ -97,48 +100,60 @@
   <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl, Bedürfnisse und Wünsche zu finden!</p>
 
   <div class="bildreihe">
+    <!-- Artikel 1 -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
         <span class="artikel-nummer">1</span>
       </div>
-      <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
+      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel" data-title="Artikel No. 1">
+        <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
+      </a>
       <div class="artikel-links">
         <a href="#">39,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
 
+    <!-- Artikel 2 -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
         <span class="artikel-nummer">2</span>
       </div>
-      <img src="/img/1000005972.png" alt="Artikel 2" />
+      <a href="/img/1000005972.png" data-lightbox="artikel" data-title="Artikel No. 2">
+        <img src="/img/1000005972.png" alt="Artikel 2" />
+      </a>
       <div class="artikel-links">
         <a href="#">29,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
 
+    <!-- Artikel 3 -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
         <span class="artikel-nummer">3</span>
       </div>
-      <img src="/img/1000005972bearbietet.png" alt="Artikel 3" />
+      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel" data-title="Artikel No. 3">
+        <img src="/img/1000005972bearbietet.png" alt="Artikel 3" />
+      </a>
       <div class="artikel-links">
         <a href="#">34,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
 
+    <!-- Artikel 4 -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
         <span class="artikel-nummer">4</span>
       </div>
-      <img src="/img/1000005972.png" alt="Artikel 4" />
+      <a href="/img/1000005972.png" data-lightbox="artikel" data-title="Artikel No. 4">
+        <img src="/img/1000005972.png" alt="Artikel 4" />
+      </a>
       <div class="artikel-links">
         <a href="#">24,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
