@@ -31,40 +31,27 @@
       margin-top: 30px;
     }
 
-    img {
+    .BildSchuetze {
       margin-top: 20px;
-      max-width: 80%;
+      width: 300px;           /* ⬅️ maximale Breite in Pixel */
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
     }
 
     .item-details {
-      display: inline-flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 20px;
-      align-items: center;
+      margin-top: 15px;
     }
 
-    .price {
-      font-size: 22px;
-      color: #ffffff;
-    }
-
-    .buy-button {
-      background-color: #ff6600;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
+    .item-details a {
+      color: #ff6600;
+      font-size: 18px;
       text-decoration: none;
+      margin: 0 15px;
     }
 
-    .buy-button:hover {
-      background-color: #e65c00;
+    .item-details a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -73,16 +60,15 @@
   <p>Dann bist du hier genau richtig!</p>
   <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl Bedürfnisse und Wünsche zu finden!</p>
 
-<div class="centered-text">
-  <h2>Artikel No. 1</h2>
+  <div class="centered-text">
+    <h2>Artikel No. 1</h2>
 
-  <img class="BildSchuetze" src="/img/1000005972bearbietet.png" />
+    <img class="BildSchuetze" src="/img/1000005972bearbietet.png" alt="Artikelbild" />
 
-  <br> <!-- Leerzeile -->
-
-  <a href="#" target="_blank">Preis: 39,99 €</a> &nbsp;&nbsp;&nbsp;
-  <a href="#" target="_blank">Kaufen</a>
-</div>
-
+    <div class="item-details">
+      <a href="#" target="_blank">Preis: 39,99 €</a>
+      <a href="https://www.paypal.me/deinBenutzername/39.99" target="_blank">Kaufen</a>
+    </div>
+  </div>
 </body>
 </html>
