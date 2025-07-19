@@ -3,119 +3,164 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Scarhead117</title>
-   
-    <Style>
-      
+    <style>
       body {
         margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
       }
+
       .hintergrund {
-        
-        height: 75vh;
-        width:  100%;
+        height: 100vh;
+        width: 100%;
         object-fit: cover;
-        height: -webkit-fill-available;
       }
 
       .BackgroundMenu {
         position: absolute;
-        right: 25px;
         top: 10px;
-        font-size: 20px;
+        right: 10px;
+        font-size: 4vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-end;
+        padding: 10px;
       }
 
       .menu {
         color: white;
         text-decoration: none;
-        height: -webkit-fill-available;
+        padding: 4px 8px;
+        background-color: transparent;
+        border-radius: 4px;
+      }
+
+      .menu:hover {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       .centered-text {
         text-align: center;
-    }
+        padding: 20px;
+      }
 
-    .BildSchuetze {
+      .BildSchuetze {
+        display: block;
+        margin: 20px auto;
+        width: 60%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+      }
 
-position: relative;
-height: 20vh;
-width:  30vh;
-object-fit: cover;
-}
+      .container {
+        text-align: center;
+        margin-top: 10px;
+      }
 
-  .container {
-    text-align: center;
-  }
+      h1, h2, h6 {
+        color: #ff6600;
+        margin: 10px 0;
+      }
 
-  .container1 {
-    text-align: right;
-  }
+      a {
+        color: #ff6600;
+        text-decoration: none;
+        margin: 0 10px;
+      }
 
-  .BildSchuetze {
-    display: block;
-    margin: 0 auto;
-  }
+      a:hover {
+        text-decoration: underline;
+      }
 
-    </Style>
+      .sidebar {
+        margin-top: 20px;
+      }
+
+      header {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      li img {
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+    </style>
   </head>
-  
-    <body>
 
-    <img class="hintergrund" src="/img/background.jpg">
+  <body>
+    <img class="hintergrund" src="/img/background.jpg" alt="Hintergrundbild" />
 
-      <div class="BackgroundMenu">
-
-        <a class="menu" href="">Home</a>&nbsp;&nbsp;
-        <a class="menu" href="https://rohitersteseite.netlify.app/Oberteile.html">Oberteile</a>&nbsp;&nbsp;
-        <a class="menu" href="https://rohitersteseite.netlify.app/Nachhilfe.html">Nachhilfe</a>&nbsp;&nbsp;
-        <a class="menu" href="">Kontakt</a>&nbsp;&nbsp;
-        <a class="menu" href="">Impressum</a>&nbsp;&nbsp;
-        <a class="menu" href="https://www.twitch.tv/scarhead117" target="_blank" >Twitch</a>&nbsp;&nbsp;
-        <a class="menu" href="https://www.myspace.com/scarhead117" target="_blank" >Myspace</a>&nbsp;&nbsp;
-        <a class="menu" href="">Über Mich!</a>
-        
-  </div>
-    </body>
-</head>
-
-<!--Bis hier ist alles der Kopf-->
-
-<div class="centered-text">
-    <h1>Scarhead117</h1>
-
-    
-
-      
-<iframe src="https://player.twitch.tv/?channel=scarhead117&parent=rohitersteseite.netlify.app" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-
-
-    
-
-    
-  <h2>Rita du Kartoffel</h2>
-  <div class="container">
-    <p>Geburtstag 16.12.1992</p>
-  </div>
-  <body>    
-      <img class="BildSchuetze" src="/img/Sternzeichen_Schuetze.jpg"/>
-      <br> <!-- Hier wird eine Leerzeile eingefügt -->
-        <a href="https://solaris-astro.de/sternzeichen-schuetze" target="_blank" >Sternzeichen </a> &nbsp;&nbsp;&nbsp;
-          <a href = "https://steamcommunity.com/profiles/76561197989462030/" target="_blank">Steam Account</a>
+    <div class="BackgroundMenu">
+      <a class="menu" href="#">Home</a>
+      <a class="menu" href="https://rohitersteseite.netlify.app/Oberteile.html">Oberteile</a>
+      <a class="menu" href="https://rohitersteseite.netlify.app/Nachhilfe.html">Nachhilfe</a>
+      <a class="menu" href="#">Kontakt</a>
+      <a class="menu" href="#">Impressum</a>
+      <a class="menu" href="https://www.twitch.tv/scarhead117" target="_blank">Twitch</a>
+      <a class="menu" href="https://www.myspace.com/scarhead117" target="_blank">Myspace</a>
+      <a class="menu" href="#">Über Mich!</a>
     </div>
-    <h6 style="margin-left: 0%;">Geburtstag --> 16.12.1992</h6>
-  <div class="sidebar" style="margin-top: 0%;"></div>
-    <header style="margin-left: 0%">My App</header>
-    <ul>  
-      <li>
-        <a href="https://www.twitch.tv/scarhead117" target="_blank">
-          <img src="/img/Sidebar/abiturmutze.png" style="width: 16px; height: 14px;"/>
-      </i>Nachhilfe</a></li>
-      <li><a href="#home"><i class="fa-home"></i>Dashboard</a></li>
-    </ul>
-</div>
-</body>
 
+    <div class="centered-text">
+      <h1>Scarhead117</h1>
 
-<!--Ende-->
+      <iframe
+        src="https://player.twitch.tv/?channel=scarhead117&parent=rohitersteseite.netlify.app"
+        frameborder="0"
+        allowfullscreen="true"
+        scrolling="no"
+        height="378"
+        width="100%"
+        style="max-width: 620px;"
+      ></iframe>
+
+      <h2>Rita du Kartoffel</h2>
+
+      <div class="container">
+        <p>Geburtstag: 16.12.1992</p>
+      </div>
+
+      <img class="BildSchuetze" src="/img/Sternzeichen_Schuetze.jpg" alt="Sternzeichen Schütze" />
+
+      <br />
+      <a href="https://solaris-astro.de/sternzeichen-schuetze" target="_blank">Sternzeichen</a>
+      <a href="https://steamcommunity.com/profiles/76561197989462030/" target="_blank">Steam Account</a>
+
+      <h6>Geburtstag → 16.12.1992</h6>
+    </div>
+
+    <div class="sidebar">
+      <header>My App</header>
+      <ul>
+        <li>
+          <a href="https://www.twitch.tv/scarhead117" target="_blank">
+            <img src="/img/Sidebar/abiturmutze.png" style="width: 16px; height: 14px;" alt="Icon" />
+            Nachhilfe
+          </a>
+        </li>
+        <li>
+          <a href="#home"><i class="fa fa-home"></i> Dashboard</a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
