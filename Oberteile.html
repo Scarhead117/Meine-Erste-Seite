@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oberteile</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <style>
@@ -27,30 +27,22 @@
 
     .bildreihe {
       display: flex;
-      justify-content: flex-start;
-      gap: 40px;
+      flex-wrap: wrap;         /* ✅ erlaubt automatische Umbrüche */
+      justify-content: center;
+      gap: 20px;                /* ✅ Abstand zwischen Bildern */
       margin-top: 30px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 20px;
-      padding-left: 20px; /* ✅ hinzugefügt damit linkes Bild sichtbar bleibt */
     }
 
     .artikel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 300px;
-      flex: 0 0 auto;
-      scroll-snap-align: center;
+      flex: 1 1 calc(25% - 20px); /* ✅ 4 Artikel nebeneinander */
+      max-width: 200px;
+      box-sizing: border-box;
     }
 
     .artikel h2 {
-      font-size: 24px;
+      font-size: 18px;
       color: #ff6600;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .artikel img {
@@ -60,31 +52,29 @@
     }
 
     .artikel-links {
-      margin-top: 12px;
+      margin-top: 8px;
     }
 
     .artikel-links a {
       color: #ff6600;
       text-decoration: none;
-      margin: 0 10px;
-      font-size: 18px;
+      margin: 0 6px;
+      font-size: 16px;
     }
 
     .artikel-links a:hover {
       text-decoration: underline;
     }
 
-    .bildreihe::-webkit-scrollbar {
-      height: 8px;
-    }
+    /* ✅ Optional: Text kleiner auf schmalen Geräten */
+    @media (max-width: 480px) {
+      .artikel h2 {
+        font-size: 16px;
+      }
 
-    .bildreihe::-webkit-scrollbar-track {
-      background: black;
-    }
-
-    .bildreihe::-webkit-scrollbar-thumb {
-      background-color: #ff6600;
-      border-radius: 4px;
+      .artikel-links a {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -94,7 +84,6 @@
   <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl, Bedürfnisse und Wünsche zu finden!</p>
 
   <div class="bildreihe">
-    <!-- Artikel No. 1 -->
     <div class="artikel">
       <h2>Artikel No. 1</h2>
       <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
@@ -103,13 +92,27 @@
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
-
-    <!-- Artikel No. 2 -->
     <div class="artikel">
       <h2>Artikel No. 2</h2>
       <img src="/img/1000005972.png" alt="Artikel 2" />
       <div class="artikel-links">
         <a href="#">29,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
+    <div class="artikel">
+      <h2>Artikel No. 3</h2>
+      <img src="/img/1000005972bearbietet.png" alt="Artikel 3" />
+      <div class="artikel-links">
+        <a href="#">34,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
+    <div class="artikel">
+      <h2>Artikel No. 4</h2>
+      <img src="/img/1000005972.png" alt="Artikel 4" />
+      <div class="artikel-links">
+        <a href="#">24,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
