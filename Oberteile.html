@@ -31,26 +31,39 @@
       margin-top: 30px;
     }
 
-    .BildSchuetze {
-      margin-top: 20px;
-      width: 300px;           /* ⬅️ maximale Breite in Pixel */
-      height: auto;
+    .bildreihe {
+      display: flex;
+      justify-content: center;
+      gap: 40px; /* Abstand zwischen Bildern */
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .artikel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    .artikel img {
+      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 12px rgba(255,255,255,0.3);
     }
 
-    .item-details {
-      margin-top: 15px;
+    .artikel-links {
+      margin-top: 12px;
     }
 
-    .item-details a {
+    .artikel-links a {
       color: #ff6600;
-      font-size: 18px;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 10px;
+      font-size: 18px;
     }
 
-    .item-details a:hover {
+    .artikel-links a:hover {
       text-decoration: underline;
     }
   </style>
@@ -58,16 +71,27 @@
 <body>
   <h1>Du bist auf der Suche nach schönen Oberteilen für alle Jahreszeiten?</h1>
   <p>Dann bist du hier genau richtig!</p>
-  <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl Bedürfnisse und Wünsche zu finden!</p>
+  <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl, Bedürfnisse und Wünsche zu finden!</p>
 
-  <div class="centered-text">
-    <h2>Artikel No. 1</h2>
+  <h2>Artikel No. 1 & 2</h2>
 
-    <img class="BildSchuetze" src="/img/1000005972bearbietet.png" alt="Artikelbild" />
+  <div class="bildreihe">
+    <!-- Linkes Bild -->
+    <div class="artikel">
+      <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
+      <div class="artikel-links">
+        <a href="#">39,99 €</a>
+        <a href="https://www.paypal.me/deinBenutzername/39.99" target="_blank">Kaufen</a>
+      </div>
+    </div>
 
-    <div class="item-details">
-      <a href="#" target="_blank">39,99 €</a>
-      <a href="https://www.paypal.me/deinBenutzername/39.99" target="_blank">Kaufen</a>
+    <!-- Rechtes Bild -->
+    <div class="artikel">
+      <img src="/img/1000005972.png" alt="Artikel 2" />
+      <div class="artikel-links">
+        <a href="#">29,99 €</a>
+        <a href="https://www.paypal.me/deinBenutzername/29.99" target="_blank">Kaufen</a>
+      </div>
     </div>
   </div>
 </body>
