@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oberteile</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Oberteile</title>
     <style>
       body {
         background-color: black;
@@ -28,32 +28,64 @@
         margin-top: 0;
       }
 
+      h2 {
+        font-size: 24px;
+        color: #ff6600;
+        margin-top: 30px;
+      }
+
       img {
-        margin-top: 40px;
+        margin-top: 20px;
         max-width: 80%;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
       }
+
+      .item-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+        margin: 20px auto 0 auto;
+      }
+
+      .price {
+        font-size: 22px;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      .buy-button {
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: right;
+      }
+
+      .buy-button:hover {
+        background-color: #e65c00;
+      }
     </style>
   </head>
   <body>
-    <h1>Du bist auf der Suche nach schöne Oberteile für alle Jahreszeiten?</h1>
+    <h1>Du bist auf der Suche nach schönen Oberteilen für alle Jahreszeiten?</h1>
     <p>Dann bist du hier genau richtig!</p>
     <p>
-      Ich helfe dir, die passenden Kleidungsstücke deiner Bedürfnisse und Wünsche zu finden!
+      Ich helfe dir, die passenden Kleidungsstücke für deine Bedürfnisse und Wünsche zu finden!
     </p>
 
     <h2>Artikel No. 1</h2>
-    
-    <img
-      src="/img/1000005972bearbietet.png"
-      alt="Mein Lieblingsoberteil"
-    />
+    <img src="/img/1000005972bearbietet.png" alt="Mein Lieblingsoberteil" />
 
-<h3>39,99</h3>
-         <div class="price">39,99 €</div>
-      <a class="buy-button" href="#">Kaufen</a>
-    
+    <div class="item-details">
+      <div class="price">39,99 €</div>
+      <a href="#" class="buy-button">Kaufen</a>
+    </div>
   </body>
 </html>
