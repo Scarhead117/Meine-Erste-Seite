@@ -121,24 +121,38 @@
 
   <div class="bildreihe">
 
-    <!-- Artikel 1 -->
-    <div class="artikel">
-      <div class="artikel-titel"><span>Artikel No.</span><span class="artikel-nummer">1</span></div>
-      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
-        <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
-      </a>
-      <div class="miniaturen">
-        <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
-        <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
-        <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
-      </div>
-      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" style="display:none;"></a>
-      <a href="/img/1000005972back.png" data-lightbox="artikel1" style="display:none;"></a>
-      <div class="artikel-links">
-        <a href="#">39,99 €</a>
-        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
-      </div>
-    </div>
+    <!-- ✅ Artikel 1 – mit dynamischer Bildvorschau und vollständiger Lightbox-Galerie -->
+<div class="artikel">
+  <!-- 🏷 Titelbereich -->
+  <div class="artikel-titel">
+    <span>Artikel No.</span>
+    <span class="artikel-nummer">1</span>
+  </div>
+
+  <!-- 🖼 Hauptbild (initiale Vorschau), wird beim Miniatur-Klick dynamisch verändert -->
+  <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
+    <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
+  </a>
+
+  <!-- 📌 Miniaturbilder – bei Klick wird das Hauptbild live aktualisiert -->
+  <div class="miniaturen">
+    <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
+    <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
+    <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
+  </div>
+
+  <!-- 🔁 Lightbox-Galerie-Einträge ➜ damit Pfeilnavigation funktioniert -->
+  <a href="/img/1000006459.png" data-lightbox="artikel1" style="display:none;"></a>
+  <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" style="display:none;"></a>
+  <a href="/img/1000005972back.png" data-lightbox="artikel1" style="display:none;"></a>
+
+  <!-- 💸 Preis & Kauflink -->
+  <div class="artikel-links">
+    <a href="#">39,99 €</a>
+    <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+  </div>
+</div>
+
 
     <!-- Artikel 2 -->
     <div class="artikel">
