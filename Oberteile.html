@@ -120,7 +120,7 @@
   <p>Ich helfe dir, die passenden Kleidungsstücke deiner Wahl, Bedürfnisse und Wünsche zu finden!</p>
 
   <div class="bildreihe">
-    <!-- Artikel 1 mit Galerie -->
+    <!-- Artikel 1 mit Lightbox-Galerie und Bildwechsel -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
@@ -128,11 +128,11 @@
       </div>
 
       <!-- Hauptbild -->
-      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
+      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Vorderseite">
         <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
       </a>
 
-      <!-- Miniatur-Wechselbilder -->
+      <!-- Miniaturen -->
       <div class="miniaturen">
         <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
         <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
@@ -140,41 +140,16 @@
         <img src="/img/1000005972detail.png" onclick="switchImage(1, '/img/1000005972detail.png')" />
       </div>
 
-      <!-- Versteckte Lightbox-Galerie für Navigation -->
-      <a href="/img/1000006459.png" data-lightbox="artikel1" style="display:none;"></a>
+      <!-- Galerieeinträge für Lightbox -->
       <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" style="display:none;"></a>
       <a href="/img/1000005972back.png" data-lightbox="artikel1" style="display:none;"></a>
       <a href="/img/1000005972detail.png" data-lightbox="artikel1" style="display:none;"></a>
 
-      <div class="artikel">
-  <div class="artikel-titel">
-    <span>Artikel No.</span>
-    <span class="artikel-nummer">1</span>
-  </div>
-
-  <!-- Galerie-Bilder mit Lightbox -->
-  <a href="/img/1000006459.png" data-lightbox="artikel1" data-title="Vorderseite">
-    <img src="/img/1000006459.png" alt="Artikel 1" />
-  </a>
-
-  <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" data-title="Alternative">
-    <img src="/img/1000005972bearbietet.png" alt="Alternative" style="width: 50px; margin-top: 6px;" />
-  </a>
-
-  <a href="/img/1000005972back.png" data-lightbox="artikel1" data-title="Rückseite">
-    <img src="/img/1000005972back.png" alt="Rückseite" style="width: 50px; margin-top: 6px;" />
-  </a>
-
-  <a href="/img/1000005972detail.png" data-lightbox="artikel1" data-title="Detailansicht">
-    <img src="/img/1000005972detail.png" alt="Detailansicht" style="width: 50px; margin-top: 6px;" />
-  </a>
-
-  <div class="artikel-links">
-    <a href="#">39,99 €</a>
-    <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
-  </div>
-</div>
-
+      <div class="artikel-links">
+        <a href="#">39,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
 
     <!-- Artikel 2 -->
     <div class="artikel">
@@ -227,4 +202,7 @@
         <img src="/img/1000005972.png" onclick="switchImage(4, '/img/1000005972.png')" />
         <img src="/img/1000006274bearbeitet.png" onclick="switchImage(4, '/img/1000006274bearbeitet.png')" />
       </div>
-      <
+      <div class="artikel-links">
+        <a href="#">24,99 €</a>
+        <a href="https://www.paypal.com/de/home"
+          arget="_blank">Kaufen</a> </div> </div> </div> <script> function switchImage(id, src) { const link = document.getElementById("link-img-" + id); const img = document.getElementById("main-img-" + id); if (link && img) { link.href = src; img.src = src; } } </script> </body> </html>
