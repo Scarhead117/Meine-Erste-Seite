@@ -184,17 +184,27 @@
         <img src="/img/1000005972.png" onclick="switchImage(4, '/img/1000005972.png')" />
         <img src="/img/1000006274bearbeitet.png" onclick="switchImage(4, '/img/1000006274bearbeitet.png')" />
       </div>
-      <a href="/img/1000006274bearbeitet.png" data-lightbox="artikel4" style="display:none;"></a>
+      <!-- Galerieeintrag für Hauptbild hinzufügen (wichtig für Pfeile) -->
+      <a href="/img/1000005972.png" data-lightbox="artikel4" style="display:none;"></a>
       <div class="artikel-links">
         <a href="#">24,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
-
   </div>
 
-  <!-- JavaScript für dynamischen Bildwechsel -->
+  <!-- ✅ JavaScript für dynamischen Bildwechsel -->
   <script>
     function switchImage(id, src) {
       const link = document.getElementById("link-img-" + id);
+      const img = document.getElementById("main-img-" + id);
+      if (link && img) {
+        link.href = src;
+        img.src = src;
+      }
+    }
+  </script>
+</body>
+</html>
+
      
