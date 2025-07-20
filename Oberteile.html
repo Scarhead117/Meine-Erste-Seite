@@ -85,9 +85,11 @@
       .artikel .artikel-titel span {
         font-size: 16px;
       }
+
       .artikel .artikel-titel .artikel-nummer {
         font-size: 18px;
       }
+
       .artikel-links a {
         font-size: 14px;
       }
@@ -96,7 +98,7 @@
 </head>
 <body>
 
-  <!-- ✅ Dein Wunschtext: Sunita Mode -->
+  <!-- ✅ Dein Wunschtext -->
   <div style="font-size: 30px; color: white; margin-bottom: 30px;">Projekt Margaret</div>
   <div style="font-size: 22px; color: white; margin-bottom: 20px;">Sunita Mode</div>
 
@@ -111,7 +113,7 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">1</span>
       </div>
-      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel" data-title="Artikel No. 1">
+      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" data-title="Artikel No. 1">
         <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
       </a>
       <div class="artikel-links">
@@ -126,7 +128,7 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">2</span>
       </div>
-      <a href="/img/1000005972.png" data-lightbox="artikel" data-title="Artikel No. 2">
+      <a href="/img/1000005972.png" data-lightbox="artikel2" data-title="Artikel No. 2">
         <img src="/img/1000005972.png" alt="Artikel 2" />
       </a>
       <div class="artikel-links">
@@ -135,20 +137,26 @@
       </div>
     </div>
 
-<!-- Artikel 3 -->
-<div class="artikel">
-  <div class="artikel-titel">
-    <span>Artikel No.</span>
-    <span class="artikel-nummer">3</span>
-  </div>
-  <a href="/img/1000005972bearbietet2.png" data-lightbox="artikel" data-title="Artikel No. 3">
-    <img src="/img/1000005972bearbietet2.png" alt="Artikel 3" />
-  </a>
-  <div class="artikel-links">
-    <a href="#">34,99 €</a>
-    <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
-  </div>
-</div>
+    <!-- Artikel 3 mit Galerie -->
+    <div class="artikel">
+      <div class="artikel-titel">
+        <span>Artikel No.</span>
+        <span class="artikel-nummer">3</span>
+      </div>
+
+      <!-- Hauptbild -->
+      <a href="/img/1000005972bearbietet2.png" data-lightbox="artikel3" data-title="Vorderseite">
+        <img src="/img/1000005972bearbietet2.png" alt="Artikel 3" />
+      </a>
+
+      <!-- Zusatzbild mit Pfeil-Navigation -->
+      <a href="/img/1000006274bearbeitet.png" data-lightbox="artikel3" data-title="Rückseite" style="display: none;"></a>
+
+      <div class="artikel-links">
+        <a href="#">34,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
 
     <!-- Artikel 4 -->
     <div class="artikel">
@@ -156,7 +164,7 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">4</span>
       </div>
-      <a href="/img/1000005972.png" data-lightbox="artikel" data-title="Artikel No. 4">
+      <a href="/img/1000005972.png" data-lightbox="artikel4" data-title="Artikel No. 4">
         <img src="/img/1000005972.png" alt="Artikel 4" />
       </a>
       <div class="artikel-links">
