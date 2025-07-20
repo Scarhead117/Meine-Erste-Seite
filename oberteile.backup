@@ -66,6 +66,19 @@
       cursor: pointer;
     }
 
+    .miniaturen {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .miniaturen img {
+      width: 50px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
     .artikel-links {
       margin-top: 8px;
     }
@@ -85,11 +98,9 @@
       .artikel .artikel-titel span {
         font-size: 16px;
       }
-
       .artikel .artikel-titel .artikel-nummer {
         font-size: 18px;
       }
-
       .artikel-links a {
         font-size: 14px;
       }
@@ -98,7 +109,6 @@
 </head>
 <body>
 
-  <!-- ✅ Dein Wunschtext -->
   <div style="font-size: 30px; color: white; margin-bottom: 30px;">Projekt Margaret</div>
   <div style="font-size: 22px; color: white; margin-bottom: 20px;">Sunita Mode</div>
 
@@ -113,9 +123,15 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">1</span>
       </div>
-      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" data-title="Artikel No. 1">
-        <img src="/img/1000005972bearbietet.png" alt="Artikel 1" />
+      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
+        <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
       </a>
+      <div class="miniaturen">
+        <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
+        <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
+        <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
+        <img src="/img/1000005972detail.png" onclick="switchImage(1, '/img/1000005972detail.png')" />
+      </div>
       <div class="artikel-links">
         <a href="#">39,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
@@ -128,30 +144,37 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">2</span>
       </div>
-      <a href="/img/1000005972.png" data-lightbox="artikel2" data-title="Artikel No. 2">
-        <img src="/img/1000005972.png" alt="Artikel 2" />
+      <a id="link-img-2" href="/img/1000005972.png" data-lightbox="artikel2" data-title="Artikel No. 2">
+        <img id="main-img-2" src="/img/1000005972.png" alt="Artikel 2" />
       </a>
+      <div class="miniaturen">
+        <img src="/img/1000005972.png" onclick="switchImage(2, '/img/1000005972.png')" />
+        <img src="/img/1000006274bearbeitet.png" onclick="switchImage(2, '/img/1000006274bearbeitet.png')" />
+      </div>
       <div class="artikel-links">
         <a href="#">29,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
 
-   <!-- Artikel 3 -->
-  <div class="artikel">
-    <div class="artikel-titel">
-      <span>Artikel No.</span>
-      <span class="artikel-nummer">3</span>
+    <!-- Artikel 3 -->
+    <div class="artikel">
+      <div class="artikel-titel">
+        <span>Artikel No.</span>
+        <span class="artikel-nummer">3</span>
+      </div>
+      <a id="link-img-3" href="/img/1000005972bearbietet2.png" data-lightbox="artikel3" data-title="Artikel No. 3">
+        <img id="main-img-3" src="/img/1000005972bearbietet2.png" alt="Artikel 3" />
+      </a>
+      <div class="miniaturen">
+        <img src="/img/1000006274bearbeitet.png" onclick="switchImage(3, '/img/1000006274bearbeitet.png')" />
+        <img src="/img/1000005972bearbietet2.png" onclick="switchImage(3, '/img/1000005972bearbietet2.png')" />
+      </div>
+      <div class="artikel-links">
+        <a href="#">34,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
     </div>
-    <a href="/img/1000005972bearbietet2.png" data-lightbox="artikel3" data-title="Artikel No. 3">
-      <img src="/img/1000005972bearbietet2.png" alt="Artikel 3" />
-    </a>
-    <div class="artikel-links">
-      <a href="#">34,99 €</a>
-      <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
-    </div>
-  </div>
-
 
     <!-- Artikel 4 -->
     <div class="artikel">
@@ -159,14 +182,27 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">4</span>
       </div>
-      <a href="/img/1000005972.png" data-lightbox="artikel4" data-title="Artikel No. 4">
-        <img src="/img/1000005972.png" alt="Artikel 4" />
+      <a id="link-img-4" href="/img/1000005972.png" data-lightbox="artikel4" data-title="Artikel No. 4">
+        <img id="main-img-4" src="/img/1000005972.png" alt="Artikel 4" />
       </a>
+      <div class="miniaturen">
+        <img src="/img/1000005972.png" onclick="switchImage(4, '/img/1000005972.png')" />
+        <img src="/img/1000006274bearbeitet.png" onclick="switchImage(4, '/img/1000006274bearbeitet.png')" />
+      </div>
       <div class="artikel-links">
         <a href="#">24,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
   </div>
-</body>
-</html>
+
+  <script>
+    function switchImage(id, src) {
+      const link = document.getElementById("link-img-" + id);
+      const img = document.getElementById("main-img-" + id);
+      if (link && img) {
+        link.href = src;
+        img.src = src;
+      }
+    }
+ 
