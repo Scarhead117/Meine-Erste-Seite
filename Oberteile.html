@@ -121,29 +121,34 @@
 
   <div class="bildreihe">
     <!-- Artikel 1 -->
-    <div class="artikel">
-      <div class="artikel-titel">
-        <span>Artikel No.</span>
-        <span class="artikel-nummer">1</span>
-      </div>
-      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Vorderseite">
-        <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
-      </a>
-      <div class="miniaturen">
-        <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
-        <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
-        <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
-        <img src="/img/1000005972detail.png" onclick="switchImage(1, '/img/1000005972detail.png')" />
-      </div>
-      <!-- Galeriebilder für Lightbox -->
-      <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" style="display:none;"></a>
-      <a href="/img/1000005972back.png" data-lightbox="artikel1" style="display:none;"></a>
-      <a href="/img/1000005972detail.png" data-lightbox="artikel1" style="display:none;"></a>
-      <div class="artikel-links">
-        <a href="#">39,99 €</a>
-        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
-      </div>
-    </div>
+<div class="artikel">
+  <div class="artikel-titel">
+    <span>Artikel No.</span>
+    <span class="artikel-nummer">1</span>
+  </div>
+
+  <!-- Hauptbild -->
+  <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Vorderseite">
+    <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
+  </a>
+
+  <!-- Miniaturbilder -->
+  <div class="miniaturen">
+    <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
+    <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
+    <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
+  </div>
+
+  <!-- Galerieeinträge für Lightbox ➜ direkt unter den Miniaturen -->
+  <a href="/img/1000005972bearbietet.png" data-lightbox="artikel1" style="display:none;"></a>
+  <a href="/img/1000005972back.png" data-lightbox="artikel1" style="display:none;"></a>
+
+  <div class="artikel-links">
+    <a href="#">39,99 €</a>
+    <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+  </div>
+</div>
+
 
     <!-- Artikel 2 -->
     <div class="artikel">
