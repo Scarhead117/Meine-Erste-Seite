@@ -98,11 +98,9 @@
       .artikel .artikel-titel span {
         font-size: 16px;
       }
-
       .artikel .artikel-titel .artikel-nummer {
         font-size: 18px;
       }
-
       .artikel-links a {
         font-size: 14px;
       }
@@ -125,13 +123,11 @@
         <span>Artikel No.</span>
         <span class="artikel-nummer">1</span>
       </div>
-      
-      <!-- Hauptbild 1 -->
-      <a id="link-img-1" href="/img/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
+      <a id="link-img-1" href="/img/1000006459.png" data-lightbox="artikel1" data-title="Artikel No. 1">
         <img id="main-img-1" src="/img/1000006459.png" alt="Artikel 1" />
       </a>
       <div class="miniaturen">
-        <img src="/img/1000006459.png"" onclick="switchImage(1, '/img/1000006459.png"')" />
+        <img src="/img/1000006459.png" onclick="switchImage(1, '/img/1000006459.png')" />
         <img src="/img/1000005972bearbietet.png" onclick="switchImage(1, '/img/1000005972bearbietet.png')" />
         <img src="/img/1000005972back.png" onclick="switchImage(1, '/img/1000005972back.png')" />
         <img src="/img/1000005972detail.png" onclick="switchImage(1, '/img/1000005972detail.png')" />
@@ -200,7 +196,6 @@
     </div>
   </div>
 
-  <!-- ✅ JavaScript für dynamischen Bildwechsel -->
   <script>
     function switchImage(id, src) {
       const link = document.getElementById("link-img-" + id);
@@ -210,6 +205,4 @@
         img.src = src;
       }
     }
-  </script>
-</body>
-</html>
+ 
