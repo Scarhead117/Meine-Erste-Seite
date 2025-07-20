@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oberteile</title>
+  <title>Oberteile mit Zoom-Galerie</title>
 
   <style>
     body {
@@ -15,14 +15,8 @@
       padding: 30px;
     }
 
-    h1 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 30px;
-      margin-top: 0;
+    h1, p {
+      margin-bottom: 12px;
     }
 
     .bildreihe {
@@ -38,18 +32,18 @@
       position: relative;
     }
 
-    .artikel .artikel-titel {
+    .artikel-titel {
       margin-bottom: 8px;
     }
 
-    .artikel .artikel-titel span {
+    .artikel-titel span {
       display: block;
       color: #ff6600;
       font-size: 18px;
       line-height: 1.2;
     }
 
-    .artikel .artikel-nummer {
+    .artikel-nummer {
       font-size: 20px;
       font-weight: bold;
     }
@@ -60,6 +54,7 @@
       height: 300px;
       overflow: hidden;
       border-radius: 10px;
+      background-color: #222;
     }
 
     .bild-vorschau img {
@@ -76,6 +71,8 @@
       overflow: hidden;
       display: none;
       pointer-events: none;
+      background-color: black;
+      border-radius: 50%;
     }
 
     .zoom-lupe img {
@@ -127,36 +124,105 @@
 
   <div class="bildreihe">
 
-    <!-- ✅ Artikel 1 mit Lupen-Zoom -->
+    <!-- Artikel 1 -->
     <div class="artikel">
       <div class="artikel-titel">
         <span>Artikel No.</span>
         <span class="artikel-nummer">1</span>
       </div>
-
       <div class="bild-vorschau" onmousemove="zoom(event, 1)" onmouseleave="hideZoom(1)">
         <img id="vorschau-img-1" src="/img/1000006459.png" alt="Artikel 1" />
         <div class="zoom-lupe" id="lupe-1">
           <img src="/img/1000006459.png" id="zoom-img-1" />
         </div>
       </div>
-
       <div class="miniaturen">
         <img src="/img/1000006459.png" onclick="zeigeBild(1, this.src)" />
         <img src="/img/1000005972bearbietet.png" onclick="zeigeBild(1, this.src)" />
         <img src="/img/1000005972back.png" onclick="zeigeBild(1, this.src)" />
         <img src="/img/1000005972detail.png" onclick="zeigeBild(1, this.src)" />
       </div>
-
       <div class="artikel-links">
         <a href="#">39,99 €</a>
         <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
       </div>
     </div>
 
+    <!-- Artikel 2 -->
+    <div class="artikel">
+      <div class="artikel-titel">
+        <span>Artikel No.</span>
+        <span class="artikel-nummer">2</span>
+      </div>
+      <div class="bild-vorschau" onmousemove="zoom(event, 2)" onmouseleave="hideZoom(2)">
+        <img id="vorschau-img-2" src="/img/1000005972.png" alt="Artikel 2" />
+        <div class="zoom-lupe" id="lupe-2">
+          <img src="/img/1000005972.png" id="zoom-img-2" />
+        </div>
+      </div>
+      <div class="miniaturen">
+        <img src="/img/1000005972.png" onclick="zeigeBild(2, this.src)" />
+        <img src="/img/1000006274bearbeitet.png" onclick="zeigeBild(2, this.src)" />
+        <img src="/img/1000005972back.png" onclick="zeigeBild(2, this.src)" />
+        <img src="/img/1000005972detail.png" onclick="zeigeBild(2, this.src)" />
+      </div>
+      <div class="artikel-links">
+        <a href="#">29,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
+
+    <!-- Artikel 3 -->
+    <div class="artikel">
+      <div class="artikel-titel">
+        <span>Artikel No.</span>
+        <span class="artikel-nummer">3</span>
+      </div>
+      <div class="bild-vorschau" onmousemove="zoom(event, 3)" onmouseleave="hideZoom(3)">
+        <img id="vorschau-img-3" src="/img/1000005972bearbietet2.png" alt="Artikel 3" />
+        <div class="zoom-lupe" id="lupe-3">
+          <img src="/img/1000005972bearbietet2.png" id="zoom-img-3" />
+        </div>
+      </div>
+      <div class="miniaturen">
+        <img src="/img/1000005972bearbietet2.png" onclick="zeigeBild(3, this.src)" />
+        <img src="/img/1000006274bearbeitet.png" onclick="zeigeBild(3, this.src)" />
+        <img src="/img/1000005972back.png" onclick="zeigeBild(3, this.src)" />
+        <img src="/img/1000005972detail.png" onclick="zeigeBild(3, this.src)" />
+      </div>
+      <div class="artikel-links">
+        <a href="#">34,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
+
+    <!-- Artikel 4 -->
+    <div class="artikel">
+      <div class="artikel-titel">
+        <span>Artikel No.</span>
+        <span class="artikel-nummer">4</span>
+      </div>
+      <div class="bild-vorschau" onmousemove="zoom(event, 4)" onmouseleave="hideZoom(4)">
+        <img id="vorschau-img-4" src="/img/1000005972.png" alt="Artikel 4" />
+        <div class="zoom-lupe" id="lupe-4">
+          <img src="/img/1000005972.png" id="zoom-img-4" />
+        </div>
+      </div>
+      <div class="miniaturen">
+        <img src="/img/1000005972.png" onclick="zeigeBild(4, this.src)" />
+        <img src="/img/1000006274bearbeitet.png" onclick="zeigeBild(4, this.src)" />
+        <img src="/img/1000005972back.png" onclick="zeigeBild(4, this.src)" />
+        <img src="/img/1000005972detail.png" onclick="zeigeBild(4, this.src)" />
+      </div>
+      <div class="artikel-links">
+        <a href="#">24,99 €</a>
+        <a href="https://www.paypal.com/de/home" target="_blank">Kaufen</a>
+      </div>
+    </div>
+
   </div>
 
-  <!-- ✅ JavaScript für Bildwechsel + Lupen-Zoom -->
+    <!-- ✅ JavaScript für Vorschau- und Zoom-Funktion -->
   <script>
     function zeigeBild(id, src) {
       document.getElementById("vorschau-img-" + id).src = src;
@@ -169,15 +235,19 @@
       const container = e.currentTarget;
 
       lupe.style.display = "block";
+
       const rect = container.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
 
-      lupe.style.left = `${x - lupe.offsetWidth / 2}px`;
-      lupe.style.top = `${y - lupe.offsetHeight / 2}px`;
+      const lupeSize = lupe.offsetWidth;
 
-      zoomImg.style.left = `${-x * 3 + lupe.offsetWidth / 2}px`;
-      zoomImg.style.top = `${-y * 3 + lupe.offsetHeight / 2}px`;
+      lupe.style.left = `${x - lupeSize / 2}px`;
+      lupe.style.top = `${y - lupeSize / 2}px`;
+
+      const zoomScale = 3;
+      zoomImg.style.left = `${-x * zoomScale + lupeSize / 2}px`;
+      zoomImg.style.top = `${-y * zoomScale + lupeSize / 2}px`;
     }
 
     function hideZoom(id) {
