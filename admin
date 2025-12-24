@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Artikelverwaltung</title>
+</head>
+<body>
+
+  <h1>Artikel hinzufügen</h1>
+
+  <form id="artikelForm">
+    <input type="text" name="artikelnummer" placeholder="Artikelnummer" required><br><br>
+    <input type="text" name="name" placeholder="Artikelname" required><br><br>
+    <input type="number" name="preis" placeholder="Preis" required><br><br>
+    <textarea name="beschreibung" placeholder="Beschreibung"></textarea><br><br>
+    <button type="submit">Speichern</button>
+  </form>
+
+  <script src="admin.js"></script>
+</body>
+</html>
