@@ -1,5 +1,5 @@
-const SUPABASE_URL = "https://DEINPROJECT.supabase.co";
-const SUPABASE_KEY = "DEIN_ANON_KEY";
+const SUPABASE_URL = "https://vgtesrlfursfsrrqseqq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_Z8q8KEpJNYukcwZlj4KHhg_nIUKV6Ts";
 
 const form = document.getElementById("artikelForm");
 
